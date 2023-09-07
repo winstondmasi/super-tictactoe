@@ -1,3 +1,5 @@
+package super_tic_tac_toe.models;
+
 public class Player{
     private char symbol; // 'X' or 'O'
 

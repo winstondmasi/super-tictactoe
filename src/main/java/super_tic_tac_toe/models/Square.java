@@ -1,3 +1,5 @@
+package super_tic_tac_toe.models;
+
 public class Square{
 
     private char value; // 'X', 'O', ' '
@@ -7,7 +9,7 @@ public class Square{
     }
 
     // getter
-    public char getVlue() {
+    public char getValue() {
         return value;
     }
 
