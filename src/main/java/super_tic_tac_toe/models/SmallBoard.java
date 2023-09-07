@@ -59,6 +59,7 @@ public class SmallBoard{
                 }
             }
         }
+        return true;
     }
 
     public boolean markSquare(int row, int col, Player player){
