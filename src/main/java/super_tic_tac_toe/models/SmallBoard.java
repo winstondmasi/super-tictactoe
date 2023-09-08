@@ -8,7 +8,7 @@ public class SmallBoard{
         this.squares = new Square[3][3];
 
         for (int i = 0; i < 3; i++){
-            for(int j = 0, j < 3; j++){
+            for(int j = 0; j < 3; j++){
                 this.squares[i][j] = new Square();
             }
         }

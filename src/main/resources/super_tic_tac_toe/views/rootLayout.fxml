@@ -1,0 +1,5 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+
+<GridPane xmlns:fx = "http://javafx.com/fxml" fx:controller = "super_tic_tac_toe.controllers.RootController">
+    <!--We will add our game components here later-->
+</GridPane>

@@ -6,7 +6,7 @@ public class Board{
     private char winner;
 
     public Board(){
-        this.boards = new SmallBoard[3][3]
+        this.boards = new SmallBoard[3][3];
 
         for (int i = 0; i < 3; i++){
             for (int j = 0; j < 3; j++){
@@ -54,7 +54,7 @@ public class Board{
         boolean isWin = boards[boardRow][boardCol].markSquare(squareRow, squareCol, player);
 
         if(isWin){
-            if (CheckForWinner(boardRow, boardCol)){
+            if (checkForWinner(boardRow, boardCol)){
                 this.winner = player.getSymbol();
                 return true;
             }

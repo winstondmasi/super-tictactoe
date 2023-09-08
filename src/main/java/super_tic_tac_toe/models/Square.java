@@ -5,7 +5,7 @@ public class Square{
     private char value; // 'X', 'O', ' '
 
     public Square(){
-        this.value = ' '
+        this.value = ' ';
     }
 
     // getter
@@ -15,7 +15,7 @@ public class Square{
 
     // setter
     public void setValue(char value){
-        this.value = value
+        this.value = value;
     }
 
     public boolean IsSquareEmpty(){
