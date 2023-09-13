@@ -25,7 +25,7 @@ public class Board{
         return winner;
     }
 
-    private boolean checkForWinner(int row, int col) {
+    public boolean checkForWinner(int row, int col) {
         char currentPlayer = boards[row][col].getWinner();
 
         // Check the current row
@@ -50,6 +50,8 @@ public class Board{
         return false;
     }
 
+    
+
     public boolean markSquare(int boardRow, int boardCol, int squareRow, int squareCol, Player player) {
         boolean isWin = boards[boardRow][boardCol].markSquare(squareRow, squareCol, player);
 
@@ -66,4 +68,16 @@ public class Board{
     public boolean isSmallBoardFull(int row, int col) {
         return boards[row][col].isFull();
     }
+
+    public boolean isFull() {
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 3; j++) {
+                if (!boards[i][j].isFull()) {
+                    return false;
+                }
+            }
+        }
+        return true;
+    }
+    
 }
