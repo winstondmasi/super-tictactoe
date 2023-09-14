@@ -4,6 +4,7 @@ public class Board{
 
     private SmallBoard[][] boards;
     private char winner;
+    
 
     public Board(){
         this.boards = new SmallBoard[3][3];

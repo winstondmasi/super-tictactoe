@@ -3,6 +3,7 @@ package super_tic_tac_toe.models;
 public class SmallBoard{
     private Square[][] squares;
     private char winner; // 'X' , 'O' or ' '
+    
 
     public SmallBoard() {
         this.squares = new Square[3][3];
